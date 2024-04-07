@@ -21,16 +21,6 @@ fi
 echo -e "Please note down location coordinates which we are populating data for - \n( latitude = $lat, longitude = $lng )"
 echo "If you think this is incorrect, check your coordinates.txt file."
 
-#cd ~/workspace
-# Either clone or pull latest.
-#QEATS_SHARED_RESOURCES="${HOME}/workspace/qeats_shared_resources"
-#if [ ! -d $QEATS_SHARED_RESOURCES ]
-#then
- #   git clone git@gitlab.crio.do:me_qeats_shared/qeats_shared_resources.git $QEATS_SHARED_RESOURCES
-#else
- #   cd $QEATS_SHARED_RESOURCES
-  #  git pull
-#fi
 
 if ps -ef | grep mongo | grep -v grep | wc -l | tr -d ' '; then
 #if systemctl status mongod | grep active > /dev/null; then
