@@ -4,3 +4,4 @@
 
 1. Update cordinates.txt file with latitude and longitude of your current location.
 2. From the root repository `chmod +x ./setup_mongo_mac.sh` and then `./setup_mongo_mac.sh`
+3. Verify by logging into MongoDB Compass or `mongosh` -> `use restaurant-database` -> `db.restaurants.find().pretty()`
